@@ -9,7 +9,7 @@ const Events = () => {
     const [events,setEvents] = useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:7000/features')
+        fetch('https://lit-wildwood-40735.herokuapp.com/features')
         .then(res => res.json())
         .then(data => setEvents(data))
     },[])

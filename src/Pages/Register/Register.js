@@ -50,7 +50,7 @@ const Register = () => {
         lastUpdate.category = name
         setNewVol(lastUpdate)
 
-        fetch('http://localhost:7000/regi',{
+        fetch('https://lit-wildwood-40735.herokuapp.com/regi',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(newVol)

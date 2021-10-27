@@ -30,7 +30,7 @@ const AddEvent = () => {
 
     const addEvent = () => {
         console.log(event)
-        fetch('http://localhost:7000/add',{
+        fetch('https://lit-wildwood-40735.herokuapp.com/add',{
             method:'POST',
             headers:{'content-type':'application/json'},
             body:JSON.stringify(event)

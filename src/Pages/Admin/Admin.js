@@ -5,13 +5,13 @@ const Admin = () => {
 
     const [allVol,setAllVol] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:7000/list')
+        fetch('https://lit-wildwood-40735.herokuapp.com/list')
         .then(res => res.json())
         .then(data => setAllVol(data))
     },[])
 
     const deleteBtn = id => {
-        fetch(`http://localhost:7000/list/${id}`,{
+        fetch(`https://lit-wildwood-40735.herokuapp.com/list/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())

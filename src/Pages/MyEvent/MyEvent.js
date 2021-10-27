@@ -13,7 +13,7 @@ const MyEvent = () => {
 
     console.log(user)
     useEffect(()=>{
-        fetch('http://localhost:7000/list')
+        fetch('https://lit-wildwood-40735.herokuapp.com/list')
         .then(res => res.json())
         .then(data => {
             const newMyCat = data.filter(cat => cat.email === userMail)
@@ -23,7 +23,7 @@ const MyEvent = () => {
     
 
     const cancelBtn = id => {
-        fetch(`http://localhost:7000/list/${id}`,{
+        fetch(`https://lit-wildwood-40735.herokuapp.com/list/${id}`,{
             method:'DELETE'
         })
         .then(res => res.json())
