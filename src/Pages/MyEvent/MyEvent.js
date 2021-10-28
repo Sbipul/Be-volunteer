@@ -11,7 +11,7 @@ const MyEvent = () => {
     const userMail =user.email
 
 
-    console.log(user)
+    console.log(myCat)
     useEffect(()=>{
         fetch('https://lit-wildwood-40735.herokuapp.com/list')
         .then(res => res.json())
@@ -42,7 +42,7 @@ const MyEvent = () => {
                     myCat.map(c => <Col>
                         <Card>
                             <div className="d-flex">
-                                <div style={{height:'150px',width:'150px'}}><img src={user.displayURL} alt="" className="h-100" /></div>
+                                <div style={{height:'150px',width:'150px'}}><img src={user.photoURL} alt="" className="h-100" /></div>
                                 <div className="text-start ps-5">
                                     <h4>{c.category}</h4>
                                     <h4>{c.date}</h4>

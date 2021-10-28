@@ -27,10 +27,8 @@ const Header = () => {
                         navbarScroll
                     >
                         <Nav.Link as={Link} className="mx-4 text-dark" to="/home">Home</Nav.Link>
-                        <Nav.Link className="mx-4 text-dark" href="#action2">Donation</Nav.Link>
                         <Nav.Link as={Link} className="mx-4 text-dark" to="/myEvnt">My Event</Nav.Link>
-                        <Nav.Link as={Link} className="mx-4 text-dark" to="/addEvnt">Add Event</Nav.Link>
-                        <Nav.Link as={Link} className="mx-4 text-dark" to="/regi">Register</Nav.Link>
+                        <Nav.Link as={Link} className="mx-4 text-dark" to="/addEvnt">Create new Event</Nav.Link>
                         {
                             user?.email ? <Button onClick={logOut}>Log Out</Button> : <Link to="/sign"><Button>Login</Button></Link>
                         }

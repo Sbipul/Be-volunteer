@@ -41,7 +41,7 @@ const Admin = () => {
                     <Table className="w-100" striped bordered hover size="lg">
                         <thead className="w-100 p-2 bg-success">
                             <tr>
-                            <th>Volenteer Name</th>
+                            <th>Volenteer</th>
                             <th>Email</th>
                             <th>Category</th>
                             <th>Action</th>
@@ -51,9 +51,9 @@ const Admin = () => {
                                 allVol.map(vol => <tbody>
                                     <tr>
                                     <td>{vol.name}</td>
-                                    <td>{vol.email}</td>
+                                    <td><small>{vol.email}</small></td>
                                     <td>{vol.category}</td>
-                                    <ButtonGroup onClick={()=>deleteBtn(vol._id)} className="text-center ms-4 text-danger"><FaTrash/></ButtonGroup>
+                                    <td><ButtonGroup onClick={()=>deleteBtn(vol._id)} className="text-center text-danger"><FaTrash/></ButtonGroup></td>
                                     </tr>
                                 </tbody>
                                 )

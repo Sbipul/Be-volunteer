@@ -5,10 +5,39 @@
     grid-template-columns: repeat(4,1fr);
     gap: 1.5rem;
 }
+.wid-50{
+    width: 50%;
+}
 
+.shadow-lgg{
+    box-shadow: 15px -15px 50px rgb(173, 173, 173);
+}
 
+#carD{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    height: 300px;
+}
+#text{
+    padding: 10px;
+    position: absolute;
+    bottom: -80%;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+#carD:hover #text{
+    bottom: -50%;
+    background: blueviolet
+}
 @media only screen and (max-width: 600px) {
     .griD {
         grid-template-columns: repeat(1,1fr);
     }
+    .wid-50{
+        width: 100%;
+    }
+    
   }

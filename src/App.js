@@ -10,6 +10,7 @@ import SignUp from './Pages/SignUp/SignUp';
 import MyEvent from './Pages/MyEvent/MyEvent';
 import AuthProvider from './AuthProvider/AuthProvider';
 import PrivetRoute from './Pages/PrivetRoute/PrivetRoute';
+import Footer from './Shared/Footer/Footer';
 
 function App() {
   return (
@@ -45,8 +46,8 @@ function App() {
           <Route path="/admin">
             <Admin/>
           </Route>
-
         </Switch>
+        <Footer/>
       </BrowserRouter>
       </AuthProvider>
     </div>

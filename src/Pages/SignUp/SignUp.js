@@ -24,7 +24,7 @@ const SignUp = () => {
     return (
         <div>
             <Container>
-                <div className="w-50 pb-5 mx-auto">
+                <div className="wid-50 pb-5 mx-auto">
                     <div className="shadow p-5 d-flex align-items-center justify-content-center" style={{height:'50vh'}}>
                         <div>
                         <h3>Please Sign up first</h3>

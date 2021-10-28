@@ -10,21 +10,6 @@ const Register = () => {
 
     const [newVol,setNewVol] = useState({})
 
-
-
-    // const handleName = e => {
-    //     const updateVolName = {...newVol}
-    //     updateVolName.name = e.target.value
-    //     setNewVol(updateVolName)
-    //     console.log(newVol)
-    // }
-
-
-    // const handleEmail = e => {
-    //     const updateVolEmail = {...newVol}
-    //     updateVolEmail.email = e.target.value
-    //     setNewVol(updateVolEmail)
-    // }
     const handleDate = e => {
         const updateVolDate = {...newVol}
         updateVolDate.date = e.target.value
@@ -35,12 +20,6 @@ const Register = () => {
         updateVolDescription.description = e.target.value
         setNewVol(updateVolDescription)
     }
-    // const handleCategory = e => {
-    //     const updateVolCategory = {...newVol}
-    //     updateVolCategory.category = e.target.value
-    //     setNewVol(updateVolCategory)
-    // }
-
 
 
     const newMember = e => {
@@ -68,7 +47,7 @@ const Register = () => {
     return (
         <div>
             <Container>
-                <div className="w-50 pb-5 mx-auto">
+                <div className="wid-50 pb-5 mx-auto">
                     <div>
                         <h4 className="text-center fw-bold">Register as Volenteer</h4>
                         <Form className="text-start shadow p-5">
