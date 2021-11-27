@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
-import { Link ,useParams} from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import useAuth from '../../Hooks/useAuth'
 
 

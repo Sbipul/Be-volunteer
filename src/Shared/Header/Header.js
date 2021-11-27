@@ -5,7 +5,7 @@ import useAuth from '../../Hooks/useAuth';
 import logo from '../../utilities/Group 1329.jpg'
 const Header = () => {
     const {user,logOut} = useAuth()
-    const mail = 'kumarroy.kb.kb@gmail.com'
+    // const mail = 'kumarroy.kb.kb@gmail.com'
     return (
         <div>
             <Navbar className="shadow-lg mb-5" expand="lg">
@@ -28,12 +28,14 @@ const Header = () => {
                     >
                         <Nav.Link as={Link} className="mx-4 text-dark" to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} className="mx-4 text-dark" to="/myEvnt">My Event</Nav.Link>
-                        <Nav.Link as={Link} className="mx-4 text-dark" to="/addEvnt">Create new Event</Nav.Link>
+                        {
+                            user?.email && <Nav.Link as={Link} className="mx-4 text-dark" to="/addEvnt">Create new Event</Nav.Link>
+                        }
                         {
                             user?.email ? <Button onClick={logOut}>Log Out</Button> : <Link to="/sign"><Button>Login</Button></Link>
                         }
                         {
-                            (mail === user?.email ? <Nav.Link as={Link} className="mx-4 text-dark" to="/admin">Admin</Nav.Link> : <Nav.Link className="mx-4 text-dark" >{user.displayName || 'User'}</Nav.Link>)
+                            (user?.email ? <Nav.Link as={Link} className="mx-4 text-dark" to="/admin">Admin</Nav.Link> : <Nav.Link className="mx-4 text-dark" >{ 'User'}</Nav.Link>)
                         }
                     </Nav>
                     </Navbar.Collapse>

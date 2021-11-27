@@ -11,7 +11,6 @@ const MyEvent = () => {
     const userMail =user.email
 
 
-    console.log(myCat)
     useEffect(()=>{
         fetch('https://lit-wildwood-40735.herokuapp.com/list')
         .then(res => res.json())

@@ -23,7 +23,6 @@ const Admin = () => {
             }
         })
     }
-    console.log(allVol)
     return (
         <div>
             <Container>

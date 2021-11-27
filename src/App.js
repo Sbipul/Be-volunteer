@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import Header from './Shared/Header/Header';
@@ -39,13 +39,13 @@ function App() {
             <MyEvent/>
           </Route>
 
-          <Route path="/addEvnt">
+          <PrivetRoute path="/addEvnt">
             <AddEvent/>
-          </Route>
+          </PrivetRoute>
 
-          <Route path="/admin">
+          <PrivetRoute path="/admin">
             <Admin/>
-          </Route>
+          </PrivetRoute>
         </Switch>
         <Footer/>
       </BrowserRouter>
